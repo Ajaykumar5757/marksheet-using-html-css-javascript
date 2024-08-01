@@ -1,0 +1,99 @@
+.section{
+    max-width:900px;
+    margin:20px auto;
+    border:3px solid  black;
+    padding:30px;
+    background-color: rgb(180, 237, 227);
+}
+
+.logo{
+    max-width:90px;
+    margin:20px auto;
+    margin-left:85px;
+}
+
+.qrcode{
+    width:80px;
+    height:80px;
+    float:right;
+}
+
+#clg-name{
+    text-align: center;
+}
+
+#clg-name h1{
+    font-size:30px;
+}
+
+#clg-name h5{
+    font-size:20px;
+}
+
+#clg-name h6{
+    font-size:15px;
+}
+
+#row-1 div,#row-2 div,#row-3 div, #row-4 div, #row-5 div,#row-6 div,#row-7 div{
+    border:2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#row-1 h3,#row-2 h3,#row-3 h3{
+    font-size: 18px;
+}
+
+#row-1 p,#row-2 p,#row-3 p{
+    font-size: 16px;
+    padding-bottom:0px;
+}
+
+#row-3{
+    margin-top: 10px;
+}
+
+#row-4 h4{
+    font-size: 16px;
+    padding:5px;
+}
+
+#row-4 input{
+    width:120%;
+    height:24px;
+    margin:6px 0px;
+    border: none;
+    font-size: 16px;
+    background-color: rgb(180, 237, 227);
+    text-align: center;
+}
+
+#row-5 h2{
+    font-size: 18px;
+    text-align: left;
+}
+
+#row-6 h3{
+    font-size: 18px;
+}
+
+#row-7 h3{
+    font-size: 16px;
+}
+
+#sign h3{
+    font-size:20px;
+    text-align: right;
+}
+
+#sign h4{
+    font-size: 16px;
+}
+
+#row-8{
+    margin-top:100px;
+}
+
+#row-9{
+    text-align: center;
+}
