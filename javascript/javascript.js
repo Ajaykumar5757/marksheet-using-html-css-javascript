@@ -1,3 +1,4 @@
+var sub1,sub2,sub3,sub4,sub5,sub6,sub7,sub8;
 function cal(){
     var m1=document.getElementById("m1").value;
     var m2=document.getElementById("m2").value;
@@ -17,86 +18,15 @@ function cal(){
     var p7=document.getElementById("p7").value;
     var p8=document.getElementById("p8").value;
 
-    var sub1,sub2,sub3,sub4,sub5,sub6,sub7,sub8;
-    if(m1=="XX"){
-        sub1=Number(p1);
-    }
-    else if(p1=="XX"){
-        sub1=Number(m1);
-    }
-    else{
-        sub1=Number(m1)+Number(p1);
-    }
-
-    if(m2=="XX"){
-        sub2=Number(p2);
-    }
-    else if(p2=="XX"){
-        sub2=Number(m2);
-    }
-    else{
-        sub2=Number(m2)+Number(p2);
-    }
-
-    if(m3=="XX"){
-        sub3=Number(p3);
-    }
-    else if(p3=="XX"){
-        sub3=Number(m3);
-    }
-    else{
-        sub3=Number(m3)+Number(p3);
-    }
-
-    if(m4=="XX"){
-        sub4=Number(p4);
-    }
-    else if(p4=="XX"){
-        sub4=Number(m4);
-    }
-    else{
-        sub4=Number(m4)+Number(p4);
-    }
-
-    if(m5=="XX"){
-        sub5=Number(p5);
-    }
-    else if(p5=="XX"){
-        sub5=Number(m5);
-    }
-    else{
-        sub5=Number(m5)+Number(p5);
-    }
-
-    if(m6=="XX"){
-        sub6=Number(p6);
-    }
-    else if(p6=="XX"){
-        sub6=Number(m6);
-    }
-    else{
-        sub6=Number(m6)+Number(p6);
-    }
-
-    if(m7=="XX"){
-        sub7=Number(p7);
-    }
-    else if(p7=="XX"){
-        sub7=Number(m7);
-    }
-    else{
-        sub7=Number(m7)+Number(p7);
-    }
-
-    if(m8=="XX"){
-        sub8=Number(p8);
-    }
-    else if(p8=="XX"){
-        sub8=Number(m8);
-    }
-    else{
-        sub8=Number(m8)+Number(p8);
-    }
+    
+    sub1=Number(m1)+Number(p1);
+    sub2=Number(m2)+Number(p2);
+    sub3=Number(m3)+Number(p3);
+    sub4=Number(m4)+Number(p4);
+    sub5=Number(m5)+Number(p5);
+    sub6=Number(m6)+Number(p6);
+    sub7=Number(m7)+Number(p7);
+    sub8=Number(m8)+Number(p8);
 
     var total=sub1+sub2+sub3+sub4+sub5+sub6+sub7+sub8;
 
@@ -114,26 +44,30 @@ function cal(){
     var per=total/8;
     document.getElementById("percentage").innerHTML=per+"%";
 
-    if(((m1 && m2 && m3 && m4 && m5)>=50) && ((p6 && p7 && p8)>=50)){
-        document.getElementById("result").innerHTML="PASS";
-        if(per>90){
-            document.getElementById("grade").innerHTML="A+";
-        }
-        else if(per>80 && per<=90){
-            document.getElementById("grade").innerHTML="A";
-        }
-        else if(per>70 && per<=80){
-            document.getElementById("grade").innerHTML="B+";
-        }
-        else if(per>60 && per<=70){
-            document.getElementById("grade").innerHTML="B";
-        }
-        else if(per>50 && per<=60){
-            document.getElementById("grade").innerHTML="C";
-        }
+    if(per>90){
+        document.getElementById("grade").innerHTML="A+";
     }
+    else if(per>80 && per<=90){
+        document.getElementById("grade").innerHTML="A";
+    }
+    else if(per>70 && per<=80){
+        document.getElementById("grade").innerHTML="B+";
+    }
+    else if(per>60 && per<=70){
+        document.getElementById("grade").innerHTML="B";
+    }
+    else if(per>50 && per<=60){
+        document.getElementById("grade").innerHTML="C";
+    }
+
+
+    if((sub1>50) && (sub2>50) && (sub3>50) && (sub4>50) && (sub5>50) && (sub6>50) && (sub7>50) && (sub8>50)){
+        document.getElementById("result").innerHTML="PASS";
+    }
+
     else{
         document.getElementById("result").innerHTML="FAIL";
         document.getElementById("grade").innerHTML="RA";
     }
 }
+
